@@ -1,12 +1,12 @@
-list=[1,2,3,4,5,6,7,8,9,10]
+list=[1,2,3,4,5,6,7,8,90,10]
 sorted=False
 for i in range(len(list)-1):
     if(list[i]>list[i+1]):
-        sorted=True
+        sorted=False
         break
     else:
-        sorted=False
-if(not sorted):
+        sorted=True
+if(sorted):
     print("The list is sorted.")
 else:
     print("The list is not sorted.")
