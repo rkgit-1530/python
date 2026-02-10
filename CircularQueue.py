@@ -13,7 +13,7 @@ class Queue:
                 self.front+=1
                 self.rear=(self.rear+1)%self.size
             else:
-                self.rear= self.rear+1%self.size
+                self.rear= (self.rear+1)%self.size
                 self.items.append(data)
                 print(f'{data} has been added')
     def dequeue(self):
