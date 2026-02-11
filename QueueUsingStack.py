@@ -10,7 +10,7 @@ class Stack:
             while self.insert:
                 self.delete.append(self.insert.pop())
         if not self.delete:
-            raise IndexError("Queue is empty")
+            print("Queue is empty")
         pop= self.delete.pop()
         print("Dequeued element:", pop)
 
